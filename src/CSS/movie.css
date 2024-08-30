@@ -1,0 +1,40 @@
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 5rem;
+  /* column-gap: 4rem; */
+  /* justify-self: center;
+    align-items: center; */
+  margin: 8rem;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.movie-container:hover {
+  transform: scale(110%);
+  border-radius: 9px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+.movie-poster {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.description {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+}
+.description p {
+  margin-bottom: 1rem;
+}
